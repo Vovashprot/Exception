@@ -19,7 +19,7 @@ public class Main {
 
     public static void main(String[] args) {
         try {
-            reg("145645!6479", "1", "1");
+            reg("145645_6479", "1", "1");
         }catch (WrongLoginException e){
          System.out.println("неправильный логин");
         }
@@ -32,6 +32,9 @@ public class Main {
         }
         catch (WrongCharsException e){
             System.out.println("обнаружены недопустимые символы  ");
+        }
+        finally {
+            System.out.println("Конец");
         }
     }
 }
